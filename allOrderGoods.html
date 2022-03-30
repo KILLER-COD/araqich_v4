@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <link href="./css/editor.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Araqich-js-v5</title>
+</head>
+<body>
+    <main role="main">
+		<section class="jumbotron text-center" style="text-align: left;">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Araqich 2.0 ver</h3>
+                </div>
+                <div class="col-sm-4  col-5 col-md-8" style="text-align: left; float: none;">
+                    <h3 style="text-align: center; margin-top: 0px; margin-bottom: 0px; float: right;">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+							<a id="see_all_orders" href="./new-order-location.html">
+								<button type="button" class="btn btn-secondary p-data-upd" style="margin-right: 10px;">
+									Պատվերի ստեղծում
+								</button>
+							</a>
+							<a id="see_all_orders" href="./allOrder.html">
+								<button type="button" class="btn btn-secondary exit" style="margin-right: 10px;">
+									Բոլոր պատվերների Դիտում
+								</button>
+							</a>
+							<a id="see_all_orders" href="./">
+								<button type="button" class="btn btn-secondary exit" style="margin-right: 10px;">
+									Դուրս գալ
+								</button>
+							</a>
+                        </div>
+                    </h3>
+                </div>
+            </div>
+		</section>
+
+		<div class="album py-5 bg-light">
+			<div class="container" style="text-align: center;">
+				<div class="m-5">
+					<button id="crate_excel_file" type="button" onclick="create_out_excel()" class="btn btn-secondary exit" style="margin-right: 10px;">Պատրաստել դուրսգրման ապրանքների ֆայլը </button>
+				</div>
+			</div>
+			<div class="container" style="text-align: center;">
+				<div class="m-5">
+					<div id="all_price"></div>
+				</div>
+			</div>
+
+			<div class="container goods-show" style="text-align: center; border-width: 2px;">
+				<div class="m-5">
+					<div class="row margin_top">
+						<div class="col-sm-12" id="table">
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.4.1/math.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.min.js" integrity="sha512-UnrKxsCMN9hFk7M56t4I4ckB4N/2HHi0w/7+B/1JsXIX3DmyBcsGpT3/BsuZMZf+6mAr0vP81syWtfynHJ69JA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script src="./js/main-allOrdersGoods.js"></script>
+	<script src="./js/index-allOrdersGoods.js"></script>
+</footer>
+</body>
+</html>

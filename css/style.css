@@ -1,0 +1,80 @@
+.table thead tr{
+    background-color:coral; 
+}
+tr {
+    background-color: deepskyblue; 
+}
+
+select#city_name,select#district_name,select#shop_name {
+    background-color: aqua;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bold;    
+}
+th {
+  border-style: solid;
+}
+#th_bord {
+    border:3px solid black;
+}
+
+#td_bord {
+    border-right:3px solid black;
+}
+
+.js-example-basic-single {
+    min-width: 300px;
+}
+
+.margin_top  {
+    margin-top: 20px;
+}
+
+#order_price_title {
+    font-size: large;
+    font-weight: bold;
+}
+
+.new-order {
+   margin-top: 40px;
+    background-color: green;
+    border-radius: 20px;
+    padding: 10px 70px;
+}
+#all_price {
+    font-size: 32px;
+  }
+.form-group.select.form-control {
+    width: 100%;
+}
+
+.btn-group button  ,#crate_excel_file  {
+    border-radius: 20px;
+    padding: 8px 30px;
+    background-color: blue;
+    font-size: 17px;
+    font-weight: 700;
+}
+#see_all_orders,#crate_excel_file {
+    color: white;
+}
+
+
+.btn.btn-secondary.p-data-upd.new-order {
+    margin: 0;
+  }
+
+  .col-sm-12.start {
+    text-align: center;
+  }
+
+  .new-order a {
+      color: white;
+      font-size:x-large;
+  }
+
+  .back-location {
+      background-color: green;
+      border-radius: 20px;
+      padding: 10px 40px;
+  }

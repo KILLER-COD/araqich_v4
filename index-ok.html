@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <link href="./css/editor.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Araqich-js-v5</title>
+</head>
+<body>
+    <main role="main">
+		<section class="jumbotron text-center" style="text-align: left;">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Araqich 2.0 ver</h3>
+                </div>
+                <div class="col-sm-4  col-5 col-md-8" style="text-align: left; float: none;">
+                    <h3 style="text-align: center; margin-top: 0px; margin-bottom: 0px; float: right;">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary p-data-upd" style="margin-right: 10px;">
+								<a id="see_all_orders" href="./allOrder.html">Տեսնել բոլոր Պատվերները</a>
+							</button>
+                            <button type="button" onclick="goods_out()" class="btn btn-secondary exit">Դուրս գալ</button>
+                        </div>
+                    </h3>
+                </div>
+            </div>
+		</section>
+
+		<div class="album py-5 bg-light">
+			<div class="container" style="text-align: center;">
+				<div class="m-5">
+					<div class="row">
+						<div class="col-sm-4">
+							<h3 style="text-align: center;">
+								<label>Քաղաք<br></label><br>
+								<div class="form-group select" >
+									<select class="form-control" id="city_name" onchange="change_city();" style="float: left; text-align: center;">
+								
+									</select>
+								</div>
+							</h3>
+						</div>
+						<div class="col-sm-4">
+							<h3 style="text-align: center;">
+							<label>Թաղամաս<br></label><br>
+							<div class="form-group select">
+								<select class="form-control" id="district_name"  onchange="change_district();" style="text-align: center;">
+		
+								</select>
+							</div>
+							</h3>
+						</div>
+						<div class="col-sm-4">
+							<h3 style="text-align: center;">
+							<label>Խանութ/Աձ<br></label><br>
+							<div class="form-group select" >
+								<select class="form-control" id="shop_name" onchange="change_shops();" style="text-align: center;">
+									
+								</select>
+							</div>
+							</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container goods-show" style="text-align: center; border-width: 2px;">
+				<div class="m-5">
+					<div class="row">
+						<div class="col-sm-6">
+							<select class="js-example-basic-single" id="js-example-basic-single" onchange="set_count_goods()">
+							</select>
+						</div>
+						<div class="col-sm-6" >
+							<div id="order_price_title">
+								Պատվերի արժեքը =  <span id="order_price"></span>
+							</div>
+						</div>
+					</div>
+					<div class="row margin_top">
+						<div class="col-sm-12">
+							<table class="table ">
+								<thead>
+									<tr id="table_header">
+										<th style="border-style: solid;">#</th>
+										<th style="border-style: solid;">Ապրանքի անուն<br></th>
+										<th style="border-style: solid;"><div>Տիպը</div></th>
+										<th style="border-style: solid;">Գինը</th>
+										<th style="border-style: solid;">Քանակ<br></th>
+									</tr>
+								</thead>						
+									
+								<tbody id="goods_table">
+
+								</tbody>
+							</table>
+						</div>
+						<div class="col-sm-12">
+							<div class="btn-group" role="group" aria-label="Basic example">
+								<button type="button" onclick="order_data()" class="btn btn-secondary p-data-upd create_order" >Պատվերի ստեղծում</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.4.1/math.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/index.js"></script>
+</footer>
+</body>
+</html>

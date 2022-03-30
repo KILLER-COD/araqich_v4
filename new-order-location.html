@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <link href="./css/editor.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Araqich-js-v5</title>
+</head>
+<body>
+    <main role="main">
+		<section class="jumbotron text-center" >
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Araqich 2.0 ver</h3>
+                </div>
+				<div class="col-sm-4  col-5 col-md-8" style="text-align: left; float: none;">
+                    <h3 style="text-align: center; margin-top: 0px; margin-bottom: 0px; float: right;">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+							<a id="see_all_orders" href="./allOrder.html">
+								<button type="button" class="btn btn-secondary exit" style="margin-right: 10px;">
+									Բոլոր պատվերների Դիտում
+								</button>
+							</a>
+							<a id="see_all_orders" href="./allOrderGoods.html">
+								<button type="button" class="btn btn-secondary p-data-upd" style="margin-right: 10px;">
+									Դուրսգրման ապրանքների դիտում
+								</button>
+							</a>
+							<a id="see_all_orders" href="./">
+								<button type="button" class="btn btn-secondary exit" style="margin-right: 10px;">
+									Դուրս գալ
+								</button>
+							</a>
+                        </div>
+                    </h3>
+                </div>
+            </div>
+		</section>
+
+		<div class="album py-5 bg-light">
+			<div class="container" style="text-align: center;">
+				<div class="m-5">
+					<div class="row">
+						<div class="col-sm-4">
+							<h3 style="text-align: center;">
+								<label>Քաղաք<br></label><br>
+								<div class="form-group select" >
+									<select class="form-control" id="city_name" onchange="change_city();" style="float: left; text-align: center;">
+								
+									</select>
+								</div>
+							</h3>
+						</div>
+						<div class="col-sm-4">
+							<h3 style="text-align: center;">
+							<label>Թաղամաս<br></label><br>
+							<div class="form-group select">
+								<select class="form-control" id="district_name"  onchange="change_district();" style="text-align: center;">
+		
+								</select>
+							</div>
+							</h3>
+						</div>
+						<div class="col-sm-4">
+							<h3 style="text-align: center;">
+							<label>Խանութ/Աձ<br></label><br>
+							<div class="form-group select" >
+								<select class="form-control" id="shop_name" onchange="change_shops();" style="text-align: center;">
+									
+								</select>
+							</div>
+							</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 start">
+							<div class="col-sm-12 start">
+								<a id="order_crate" href="./new-order-goods.html" hidden>
+									<button type="button" class="btn btn-secondary p-data-upd new-order" onclick="send_location();">Պատվերի ստեղծում</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+		<script src="./js/main-location.js"></script>
+		<script src="./js/new-location.js"></script>
+	</footer>
+</body>
+</html>
